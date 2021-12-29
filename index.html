@@ -5,9 +5,100 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <title>Personal Portfolio</title>
 </head>
 <body>
-  
+<!--------------------- Navigation bar ----------------------->
+  <nav id="navbar">
+    <ul id="menu">
+      <li class="menu-list">
+        <a href="#about">about</a>
+      </li>
+      <li class="menu-list">
+        <a href="#projects">project</a>
+      </li>
+      <li class="menu-list">
+        <a href="#contact">contact</a>
+      </li>
+    </ul>
+  </nav>
+<!--------------------- Welcome section ----------------------->
+  <section id="welcome-section">
+    <h1 class="section-title" id="main-title">Arnel Hernandez</h1>
+    <hr>
+    <p>A Web Developer</p>
+  </section>
+<!--------------------- Projects section ----------------------->
+  <section id="projects">
+    <h1 class="section-title">My Projects</h1>
+    <div class="proj-gallery">
+      <figure>
+        <a href="https://codepen.io/nelly02d/full/zYdPBOG" class="project-tile">
+          <img src="https://github.com/nelly02d/Tribute-page/blob/main/Tribute%20page.png?raw=true" alt="" class="images">
+          <figcaption>Tribute Page</figcaption>
+        </a>
+      </figure>
+      <figure>
+        <a href="https://codepen.io/nelly02d/full/rNGGNYZ" class="project-tile">
+          <img src="https://github.com/nelly02d/Product-page/blob/main/Product%20Landing%20page.png?raw=true" alt="" class="images">
+          <figcaption>Product Landing Page</figcaption>
+        </a>
+      </figure>
+      <figure>
+        <a href="https://codepen.io/nelly02d/full/ZEXOpBm" class="project-tile">
+          <img src="https://github.com/nelly02d/Technical-documentation-page/blob/master/Technical%20documentation%20page.png?raw=true" alt="" class="images">
+          <figcaption>Technical Documentation Page</figcaption>
+        </a>
+      </figure>
+    </div>
+  </section>
+<!--------------------- Contact section ----------------------->
+  <section id="contact">
+    <h1 class="title">Contact</h1>
+    <div class="contact__container">
+      <div class="p_contact">
+        <h6 class="p_title">phone</h6>
+        <p>+44 00 00 00 00</p>
+
+        <h6 class="p_title">email</h6>
+        <p>personal@gmail.com</p>
+
+        <h6 class="p_title">zoom</h6>
+        <p>personal</p>
+
+        <h6 class="p_title">social</h6>
+
+        <div class="icons">
+          <a href="https://www.linkedin.com/school/free-code-camp/" class="contact-icon" id="linkedin-link" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/freecodecamp" class="contact-icon" id="profile-link" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.facebook.com/freecodecamp" class="contact-icon" id="linkedin-link" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/freecodecamp/" class="contact-icon" id="linkedin-link" target="_blank">
+            <i class="fab fa-instagram-square"></i>
+          </a>  
+        </div>
+      </div>
+      <div class="comment">
+        <form>
+          <label for="fname">First Name</label>
+          <input id="fname" type="text" name="firstname" placeholder="Your name..">
+
+          <label for="email">Email</label>
+          <input id="email" type="text" name="email" placeholder="Your email..">
+
+          <label for="subject">Subject</label>
+          <textarea id="subject" type="text" name="subject" placeholder="Write something.." style="height: 200px"></textarea>
+
+          <input id="submit" type="submit" name="" value="Submit">
+        </form>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
