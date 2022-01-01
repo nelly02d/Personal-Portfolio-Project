@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Poppins&family=Ubuntu&display=swap");
+
+:root {
+  --baby-blue: #7fdeff;
+  --space-cadet: #2c2a4a;
+  --purple-navy: #4f518c;
+  --medium-purple: #907ad6;
+  --mauve: #dabfff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: rgb(43, 40, 40);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar
+------------------------------------------ */
+#navbar {
+  position: fixed;
+  width: 100%;
+  height: 75px;
+  background-color: var(--space-cadet);
+}
+
+#menu {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+#menu a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--baby-blue);
+  font-size: 1.3rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 20px 80px;
+  transition: color 0.3s ease;
+}
+
+#menu a:hover {
+  border-bottom: 4px solid var(--medium-purple);
+}
+
+#menu li {
+  list-style: none;
+}
+
+/* Welcome section
+------------------------------------------ */
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url(https://github.com/nelly02d/Personal-Portfolio-Project/blob/master/background.png?raw=true);
+}
+
+#sub-title,
+#sub {
+  color: #ffffff;
+}
+
+#slash {
+  color: #f8a557;
+}
+
+#sub-title {
+  font-size: 2rem;
+}
+
+#main-title {
+  font-size: 4rem;
+  border-bottom: solid 2px #f8a557;
+  padding: 0 20px;
+}
+
+#main-title {
+  color: #7fdeff;
+}
+
+#sub {
+  font-size: 1.5rem;
+  padding-top: 10px;
+}
+
+.icons {
+  margin-top: 20px;
+}
+
+i {
+  font-size: 3rem;
+  margin: 10px 20px;
+  color: var(--mauve);
+}
+
+i:hover {
+  color: #f8a557;
+}
+/* Project section
+------------------------------------------ */
+
+img {
+  width: 300px;
+}
