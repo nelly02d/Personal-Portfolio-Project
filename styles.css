@@ -6,6 +6,7 @@
   --purple-navy: #4f518c;
   --medium-purple: #907ad6;
   --mauve: #dabfff;
+  --ponkan: #f8a557;
 }
 
 * {
@@ -66,11 +67,11 @@
 
 #sub-title,
 #sub {
-  color: #ffffff;
+  color: var(--mauve);
 }
 
 #slash {
-  color: #f8a557;
+  color: var(--ponkan);
 }
 
 #sub-title {
@@ -79,7 +80,7 @@
 
 #main-title {
   font-size: 4rem;
-  border-bottom: solid 2px #f8a557;
+  border-bottom: solid 2px var(--ponkan);
   padding: 0 20px;
 }
 
@@ -89,7 +90,10 @@
 
 #sub {
   font-size: 1.5rem;
-  padding-top: 10px;
+  margin-top: 10px;
+  color: var(--space-cadet);
+  padding: 5px 55px;
+  background-color: wheat;
 }
 
 .icons {
@@ -103,11 +107,51 @@ i {
 }
 
 i:hover {
-  color: #f8a557;
+  color: var(--ponkan);
 }
+
 /* Project section
 ------------------------------------------ */
 
+#projects {
+  background-color: var(--space-cadet);
+  height: 80vh;
+}
+
+.section-title {
+  padding: 100px 0 100px 0;
+  text-align: center;
+  color: var(--mauve);
+}
+
+#gallery {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 img {
   width: 300px;
+  height: 150px;
+}
+
+figure {
+  border: solid 2px var(--mauve);
+  border-radius: 5px;
+  transition: all ease 0.5s;
+  background-color: var(--ponkan);
+}
+
+figure a {
+  text-decoration: none;
+}
+
+figcaption {
+  text-align: center;
+  padding: 3px 0 5px 0;
+  font-size: 1.1rem;
+  color: var(--space-cadet);
+}
+
+figure:hover {
+  opacity: 1;
 }
